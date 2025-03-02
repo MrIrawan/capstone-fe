@@ -6,7 +6,6 @@ import { CategoriesSection } from "@/components/home/CategoriesSection";
 import { FeaturedContentTabs } from "@/components/home/FeaturedContentTabs";
 import { PartsToolsSection } from "@/components/home/PartsToolsSection";
 import { CommunitySection } from "@/components/home/CommunitySection";
-import { Footer } from "@/components/layout/Footer";
 
 export default function Home() {
   const [isMounted, setIsMounted] = useState<boolean>(false);
@@ -23,12 +22,13 @@ export default function Home() {
   
   return (
     <div className="min-h-screen font-sans">
+      {/* navbar in layout file */}
       <HeroSection />
       <CategoriesSection />
       <FeaturedContentTabs />
       <PartsToolsSection />
       <CommunitySection />
-      <Footer />
+      {/* footer in layout file */}
     </div>
   );
 }
