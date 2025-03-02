@@ -7,14 +7,9 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { Button } from "../ui/button";
+import { ArticleProps } from "@/types";
 
-type CardProps = {
-    image : string,
-    title : string,
-    description : string
-}
-
-function CardArticle({ image, title, description } : CardProps) {
+function CardArticle({ image, title, description } : ArticleProps) {
     return (
         <Card>
             <CardHeader className="w-full h-full">

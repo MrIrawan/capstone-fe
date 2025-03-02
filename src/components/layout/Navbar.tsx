@@ -3,6 +3,7 @@ import {
     NavigationMenuList,
     NavigationMenuItem
 } from "@/components/ui/navigation-menu"
+import { Button } from "../ui/button";
 
 
 function Navbar() {
@@ -10,19 +11,28 @@ function Navbar() {
         <header className="px-5 py-5 bg-secondary">
         <div className="container mx-auto w-full flex justify-between items-center">
           <h2 className="text-2xl font-bold text-blue-500">MarketSight</h2>
-          <NavigationMenu>
+          <NavigationMenu className="lg:gap-10">
             <NavigationMenuList className="gap-6">
-              <NavigationMenuItem className="bg-blue-500 px-4 py-2 rounded-sm">
-                <a href="/" className="text-base text-secondary font-semibold leading-relaxed">home</a>
+              <NavigationMenuItem>
+                <a href="/" className="text-base text-foreground font-semibold leading-relaxed transition-colors duration-300 ease-out hover:text-blue-500">home</a>
               </NavigationMenuItem>
-              <NavigationMenuItem className="px-4 py-2 rounded-sm transition-all duration-300 ease-out hover:ring-2 hover:ring-blue-500">
-                <a href="/#categories" className="text-base text-foreground font-semibold leading-relaxed">categories</a>
+              <NavigationMenuItem>
+                <a href="/#categories" className="text-base text-foreground font-semibold leading-relaxed transition-colors duration-300 ease-out hover:text-blue-500">categories</a>
               </NavigationMenuItem>
-              <NavigationMenuItem className="px-4 py-2 rounded-sm transition-all duration-300 ease-out hover:ring-2 hover:ring-blue-500">
-                <a href="/#articles" className="text-base text-foreground font-semibold leading-relaxed">article</a>
+              <NavigationMenuItem>
+                <a href="/#articles" className="text-base text-foreground font-semibold leading-relaxed transition-colors duration-300 ease-out hover:text-blue-500">article</a>
               </NavigationMenuItem>
-              <NavigationMenuItem className="px-4 py-2 rounded-sm transition-all duration-300 ease-out hover:ring-2 hover:ring-blue-500">
-                <a href="/" className="text-base text-foreground font-semibold leading-relaxed">others</a>
+              <NavigationMenuItem>
+                <a href="/" className="text-base text-foreground font-semibold leading-relaxed transition-colors duration-300 ease-out hover:text-blue-500">others</a>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+            <NavigationMenuList className="gap-2 hidden lg:flex">
+              <NavigationMenuItem>
+                <Button className="bg-blue-500 transition-all duration-300 hover:bg-blue-600">signup</Button>
+              </NavigationMenuItem>
+              <hr className="border border-black py-3"/>
+              <NavigationMenuItem>
+                <Button className="bg-transparent text-foreground ring-2 ring-blue-600 transition-all duration-300 hover:bg-blue-600 hover:text-secondary">signin</Button>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>

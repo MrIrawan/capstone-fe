@@ -14,3 +14,9 @@ export type CategoryType = {
     name: string;
     image: string;
   };
+
+  export type ArticleProps = {
+    image : string,
+    title : string,
+    description : string
+}
