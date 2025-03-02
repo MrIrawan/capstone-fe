@@ -16,7 +16,7 @@ export type CategoryType = {
   };
 
   export type ArticleProps = {
-    image : string,
-    title : string,
-    description : string
+    title: string;
+    description ? : string;
+    image: string;
 }
