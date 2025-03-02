@@ -121,7 +121,7 @@ const popularGuides: RepairGuideType[] = [
 
 export const FeaturedContentTabs = () => {
   return (
-    <div className="py-16 bg-white">
+    <div className="py-16 bg-white" id="articles">
       <div className="container mx-auto px-4 max-w-6xl">
         <Tabs defaultValue="featured" className="w-full">
           <TabsList className="w-full flex justify-center mb-8 bg-transparent border-b">
