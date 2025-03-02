@@ -16,7 +16,7 @@ interface CardDataProps {
 function CardArticle({ data } : CardDataProps) {
     return (
       <Card className="flex flex-col justify-between">
-        <CardHeader>
+        <CardHeader className="w-full">
             <img src={data.image} alt="photo-1" className="w-[300px] h-full object-cover"/>
         </CardHeader>
         <CardContent>

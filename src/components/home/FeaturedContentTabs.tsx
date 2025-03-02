@@ -1,121 +1,118 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { RepairGuideCard } from "@/components/shared/RepairGuideCard";
-import { RepairGuideType } from "@/types";
+import { ArticleProps } from "@/types";
+import CardArticle from "../shared/CardArticle";
 
-const featuredGuides: RepairGuideType[] = [
+const featuredGuides: ArticleProps[] = [
   {
-    title: "iPhone 15 Pro Battery Replacement",
-    description: "Replace your iPhone 15 Pro battery with this guided repair.",
-    difficulty: "Moderate",
-    time: "30 minutes",
+    title: "MacBook Pro M3 SSD Upgrade", 
+    description: "Upgrade your MacBook Pro M3's storage with this step-by-step guide.", 
+    image: "/og-fb-logo-en.webp"
   },
   {
-    title: "iPhone 15 Pro Battery Replacement",
-    description: "Replace your iPhone 15 Pro battery with this guided repair.",
-    difficulty: "Moderate",
-    time: "30 minutes",
+    title: "MacBook Pro M3 SSD Upgrade", 
+    description: "Upgrade your MacBook Pro M3's storage with this step-by-step guide.", 
+    image: "/og-fb-logo-en.webp"
   },
   {
-    title: "iPhone 15 Pro Battery Replacement",
-    description: "Replace your iPhone 15 Pro battery with this guided repair.",
-    difficulty: "Moderate",
-    time: "30 minutes",
+    title: "MacBook Pro M3 SSD Upgrade", 
+    description: "Upgrade your MacBook Pro M3's storage with this step-by-step guide.", 
+    image: "/og-fb-logo-en.webp"
   },
   {
-    title: "iPhone 15 Pro Battery Replacement",
-    description: "Replace your iPhone 15 Pro battery with this guided repair.",
-    difficulty: "Moderate",
-    time: "30 minutes",
+    title: "MacBook Pro M3 SSD Upgrade", 
+    description: "Upgrade your MacBook Pro M3's storage with this step-by-step guide.", 
+    image: "/og-fb-logo-en.webp"
   },
   {
-    title: "iPhone 15 Pro Battery Replacement",
-    description: "Replace your iPhone 15 Pro battery with this guided repair.",
-    difficulty: "Moderate",
-    time: "30 minutes",
+    title: "MacBook Pro M3 SSD Upgrade", 
+    description: "Upgrade your MacBook Pro M3's storage with this step-by-step guide.", 
+    image: "/og-fb-logo-en.webp"
   },
   {
-    title: "iPhone 15 Pro Battery Replacement",
-    description: "Replace your iPhone 15 Pro battery with this guided repair.",
-    difficulty: "Moderate",
-    time: "30 minutes",
+    title: "MacBook Pro M3 SSD Upgrade", 
+    description: "Upgrade your MacBook Pro M3's storage with this step-by-step guide.", 
+    image: "/og-fb-logo-en.webp"
+  },
+  {
+    title: "MacBook Pro M3 SSD Upgrade", 
+    description: "Upgrade your MacBook Pro M3's storage with this step-by-step guide.", 
+    image: "/og-fb-logo-en.webp"
   },
 ];
 
-const newestGuides: RepairGuideType[] = [
+const newestGuides: ArticleProps[] = [
   {
-    title: "MacBook Pro M3 SSD Upgrade",
-    description: "Upgrade your MacBook Pro M3's storage with this step-by-step guide.",
-    difficulty: "Hard",
-    time: "45 minutes",
+    title: "MacBook Pro M3 SSD Upgrade", 
+    description: "Upgrade your MacBook Pro M3's storage with this step-by-step guide.", 
+    image: "/og-fb-logo-en.webp"
   },
   {
-    title: "MacBook Pro M3 SSD Upgrade",
-    description: "Upgrade your MacBook Pro M3's storage with this step-by-step guide.",
-    difficulty: "Hard",
-    time: "45 minutes",
+    title: "MacBook Pro M3 SSD Upgrade", 
+    description: "Upgrade your MacBook Pro M3's storage with this step-by-step guide.", 
+    image: "/og-fb-logo-en.webp"
   },
   {
-    title: "MacBook Pro M3 SSD Upgrade",
-    description: "Upgrade your MacBook Pro M3's storage with this step-by-step guide.",
-    difficulty: "Hard",
-    time: "45 minutes",
+    title: "MacBook Pro M3 SSD Upgrade", 
+    description: "Upgrade your MacBook Pro M3's storage with this step-by-step guide.", 
+    image: "/og-fb-logo-en.webp"
   },
   {
-    title: "MacBook Pro M3 SSD Upgrade",
-    description: "Upgrade your MacBook Pro M3's storage with this step-by-step guide.",
-    difficulty: "Hard",
-    time: "45 minutes",
+    title: "MacBook Pro M3 SSD Upgrade", 
+    description: "Upgrade your MacBook Pro M3's storage with this step-by-step guide.", 
+    image: "/og-fb-logo-en.webp"
   },
   {
-    title: "MacBook Pro M3 SSD Upgrade",
-    description: "Upgrade your MacBook Pro M3's storage with this step-by-step guide.",
-    difficulty: "Hard",
-    time: "45 minutes",
+    title: "MacBook Pro M3 SSD Upgrade", 
+    description: "Upgrade your MacBook Pro M3's storage with this step-by-step guide.", 
+    image: "/og-fb-logo-en.webp"
   },
   {
-    title: "MacBook Pro M3 SSD Upgrade",
-    description: "Upgrade your MacBook Pro M3's storage with this step-by-step guide.",
-    difficulty: "Hard",
-    time: "45 minutes",
+    title: "MacBook Pro M3 SSD Upgrade", 
+    description: "Upgrade your MacBook Pro M3's storage with this step-by-step guide.", 
+    image: "/og-fb-logo-en.webp"
+  },
+  {
+    title: "MacBook Pro M3 SSD Upgrade", 
+    description: "Upgrade your MacBook Pro M3's storage with this step-by-step guide.", 
+    image: "/og-fb-logo-en.webp"
+  },
+  {
+    title: "MacBook Pro M3 SSD Upgrade", 
+    description: "Upgrade your MacBook Pro M3's storage with this step-by-step guide.", 
+    image: "/og-fb-logo-en.webp"
+  },
+  {
+    title: "MacBook Pro M3 SSD Upgrade", 
+    description: "Upgrade your MacBook Pro M3's storage with this step-by-step guide.", 
+    image: "/og-fb-logo-en.webp"
   },
 ];
 
-const popularGuides: RepairGuideType[] = [
+const popularGuides: ArticleProps[] = [
   {
-    title: "Samsung Galaxy S24 Screen Replacement",
-    description: "Fix your cracked Galaxy S24 screen with our comprehensive guide.",
-    difficulty: "Moderate",
-    time: "40 minutes",
+    title: "MacBook Pro M3 SSD Upgrade", 
+    description: "Upgrade your MacBook Pro M3's storage with this step-by-step guide.", 
+    image: "/og-fb-logo-en.webp"
   },
   {
-    title: "Samsung Galaxy S24 Screen Replacement",
-    description: "Fix your cracked Galaxy S24 screen with our comprehensive guide.",
-    difficulty: "Moderate",
-    time: "40 minutes",
+    title: "MacBook Pro M3 SSD Upgrade", 
+    description: "Upgrade your MacBook Pro M3's storage with this step-by-step guide.", 
+    image: "/og-fb-logo-en.webp"
   },
   {
-    title: "Samsung Galaxy S24 Screen Replacement",
-    description: "Fix your cracked Galaxy S24 screen with our comprehensive guide.",
-    difficulty: "Moderate",
-    time: "40 minutes",
+    title: "MacBook Pro M3 SSD Upgrade", 
+    description: "Upgrade your MacBook Pro M3's storage with this step-by-step guide.", 
+    image: "/og-fb-logo-en.webp"
   },
   {
-    title: "Samsung Galaxy S24 Screen Replacement",
-    description: "Fix your cracked Galaxy S24 screen with our comprehensive guide.",
-    difficulty: "Moderate",
-    time: "40 minutes",
+    title: "MacBook Pro M3 SSD Upgrade", 
+    description: "Upgrade your MacBook Pro M3's storage with this step-by-step guide.", 
+    image: "/og-fb-logo-en.webp"
   },
   {
-    title: "Samsung Galaxy S24 Screen Replacement",
-    description: "Fix your cracked Galaxy S24 screen with our comprehensive guide.",
-    difficulty: "Moderate",
-    time: "40 minutes",
-  },
-  {
-    title: "Samsung Galaxy S24 Screen Replacement",
-    description: "Fix your cracked Galaxy S24 screen with our comprehensive guide.",
-    difficulty: "Moderate",
-    time: "40 minutes",
+    title: "MacBook Pro M3 SSD Upgrade", 
+    description: "Upgrade your MacBook Pro M3's storage with this step-by-step guide.", 
+    image: "/og-fb-logo-en.webp"
   },
 ];
 
@@ -137,25 +134,25 @@ export const FeaturedContentTabs = () => {
           </TabsList>
 
           <TabsContent value="featured" className="mt-0">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {featuredGuides.map((guide, index) => (
-                <RepairGuideCard key={index} guide={guide} />
+            <div className="grid grid-cols-3 gap-6">
+              {featuredGuides.map((article, articleIndex) => (
+                <CardArticle key={articleIndex} data={article} />
               ))}
             </div>
           </TabsContent>
 
           <TabsContent value="newest" className="mt-0">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {newestGuides.map((guide, index) => (
-                <RepairGuideCard key={index} guide={guide} />
+            <div className="grid grid-cols-3 gap-6">
+              {newestGuides.map((article, articleIndex) => (
+                <CardArticle key={articleIndex} data={article}/>
               ))}
             </div>
           </TabsContent>
 
           <TabsContent value="popular" className="mt-0">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {popularGuides.map((guide, index) => (
-                <RepairGuideCard key={index} guide={guide} />
+            <div className="grid grid-cols-3 gap-6">
+              {popularGuides.map((article, articleIndex) => (
+                <CardArticle key={articleIndex} data={article}/>
               ))}
             </div>
           </TabsContent>

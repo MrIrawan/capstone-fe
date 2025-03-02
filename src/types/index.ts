@@ -1,8 +1,3 @@
-export type CategoryType = {
-    name: string;
-    image: string;
-  };
-  
   export type RepairGuideType = {
     title: string;
     description: string;
